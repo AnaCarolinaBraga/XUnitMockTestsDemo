@@ -43,23 +43,6 @@ namespace MockingUnitTestsDemoApp.Tests.Services
             Assert.Equal(expectedResult.ToString(), result.ToString());
         }
 
-        //[Fact]
-        //public void Get2222ForLeague_HappyDay_RetornaPlayers()
-        //{
-        //    // 2 e 3
-        //    //arrange
-        //    _mockILeagueRepository.IsValid(2).Returns(true);
-        //    _mockITeamRepository.GetForLeague(2).Returns(GetFakeTeams().Where(x => x.LeagueID == 2).ToList());
-        //    _mockIPlayerRepository.GetForTeam(5).Returns(GetFakePlayers());
-        //    var expectedResult = GetFakePlayers().Where(x => x.TeamID == 5).ToList();
-
-        //    //act
-        //    var result = _subject.GetForLeague(2);
-
-        //    //assert
-        //    Assert.Equal(expectedResult.ToString(), result.ToString());
-        //}
-
         [Fact]
         public void GetForLeague_LigaInexistente_RetornaLista()
         {
